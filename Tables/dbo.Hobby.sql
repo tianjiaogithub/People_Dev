@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[Hobby]
+(
+[HobbyID] [int] NOT NULL IDENTITY(1, 1),
+[Hobby] [nvarchar] (100) COLLATE Latin1_General_CI_AS NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Hobby] ADD CONSTRAINT [PK_Hobby] PRIMARY KEY CLUSTERED  ([HobbyID]) ON [PRIMARY]
+GO
