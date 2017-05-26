@@ -7,7 +7,8 @@ CREATE TABLE [dbo].[Person]
 [CompanyID] [int] NULL,
 [HobbyID] [int] NULL,
 [TitleID] [smallint] NULL,
-[CountryID] [int] NULL
+[CountryID] [int] NULL,
+[Gender] [nchar] (10) COLLATE Latin1_General_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Person] ADD CONSTRAINT [CK_Person_DOB] CHECK (([DateOfBirth]<=getdate()))
